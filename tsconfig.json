@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+      "target": "ES6",
+      "lib": ["DOM", "DOM.Iterable", "ES6"],  
+      "moduleResolution": "Node",            
+      "esModuleInterop": true,              
+      "jsx": "react-jsx",                
+      "strict": true,                      
+      "skipLibCheck": true,                   
+      "allowJs": true,                         
+      "resolveJsonModule": true,             
+      "isolatedModules": true                  
+    },
+    "include": ["src", "webpack"],            
+    "exclude": ["node_modules", "dist"]       
+  }
+  

@@ -1,0 +1,65 @@
+{
+  "env": {
+      "browser": true,
+      "es2021": true
+  },
+  "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "plugin:@typescript-eslint/recommended",
+      "prettier"
+  ],
+  "overrides": [
+      {
+          "files": ["*/.ts", "*/.tsx", "*/.jsx", "*/.js"],
+          "rules": {
+              "simple-import-sort/imports": [
+                  "error",
+                  {
+                      "groups": [
+                          ["^react.*$"],
+                          ["^@"],
+                          ["^~"],
+                          ["^[a-z]"],
+                          ["^base$"],
+                          ["^helpers$"],
+                          ["^actions$"],
+                          ["^constants$"],
+                          ["^messages$"],
+                          ["^\\.\\.(?!/?$)", "^\\.\\./?$"],
+                          ["^\\./(?=.*/)(?!/?$)", "^\\.(?!/?$)", "^\\./?$"],
+                          ["^.+\\.scss$", "^style$"]
+                      ]
+                  }
+              ]
+          }
+      }
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+      "ecmaFeatures": {
+          "jsx": true
+      },
+      "ecmaVersion": "latest",
+      "sourceType": "module"
+  },
+  "plugins": ["react", "@typescript-eslint", "react-hooks", "prettier", "simple-import-sort"],
+  "rules": {
+      "react/react-in-jsx-scope": "off",
+      "spaced-comment": "error",
+      "quotes": ["error", "single"],
+      "no-duplicate-imports": "error",
+      "no-use-before-define": "off",
+      "react/prop-types": 0,
+      "@typescript-eslint/no-use-before-define": ["error"],
+      "simple-import-sort/exports": "error"
+  },
+  "settings": {
+      "import/resolver": {
+          "typescript": {}
+      },
+      "react": {
+          "version": "detect"
+      }
+  }
+}
