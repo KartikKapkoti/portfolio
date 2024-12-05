@@ -1,16 +1,18 @@
-import React from 'react'
-import messages from './messages'
-import  './styles.scss';
-const HomePage = () => {
-    return (
-       <div className='container'>
-        <div className="HomePage-container">
-            <div className="HomePage-Text">
-                <h1>{messages.title}</h1>
-            </div>
-        </div>
-       </div>
-    )
-}
 
-export default HomePage
+import React from 'react';
+import Header from './Header';
+import './styles.scss';
+import AboutMe from '../About/AboutMe';
+
+
+const HomePage = () => {
+  return (
+   <div className="home">
+    <Header/>
+    <AboutMe/>
+   </div>
+  );
+  
+};
+
+export default HomePage;

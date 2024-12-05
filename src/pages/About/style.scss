@@ -1,0 +1,23 @@
+.about-me {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    padding: 2rem; 
+  }
+  
+  .heading {
+    font-size: 2rem; 
+    font-weight: bold;
+    margin-top: 0%;
+     
+  }
+  
+  .about-me-content {
+    max-width: 800px; 
+    font-size: 1rem;
+    line-height: 1.5; 
+    color: #333; 
+  }
+  
