@@ -9,7 +9,7 @@ const devConfig: Configuration = {
   devtool: 'inline-source-map',  
   output: {
     path: path.resolve(__dirname, '../dist'),  
-    filename: 'gstfly.[contenthash].js',     
+    filename: 'portfolio.[contenthash].js',     
     publicPath: '/',
   },
   devServer: {

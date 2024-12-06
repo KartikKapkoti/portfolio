@@ -1,0 +1,38 @@
+.my-skills{
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    padding: 1rem; 
+}
+
+.title{
+    font-size: 2rem; 
+    font-weight: bold;
+    margin-top: 0%;
+}
+
+.skills-image{
+    background: url('/src/assets/skills-image.jpg');
+    height: 400px; 
+    width: 70%; 
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    position: relative; 
+}
+
+
+@media (max-width: 785px) {
+    .skills-image {
+      width: 90%; 
+      height: 300px; 
+      background-size: contain; 
+      background-position: center center; 
+    }
+  
+    .title {
+      font-size: 1.5rem; 
+    }
+  }

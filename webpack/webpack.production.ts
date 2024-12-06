@@ -9,7 +9,7 @@ const prodConfig: Configuration = {
   mode: 'production', 
   output: {
     path: path.resolve(__dirname, '../dist'),  
-    filename: 'gstfly.[contenthash].js',     
+    filename: 'portfolio.[contenthash].js',     
     publicPath: './',
   },  
   plugins: [

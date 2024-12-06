@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { navLinks } from './data';
+import { navLinks } from '../Home/data';
 import './styles.scss';
 
 const Header = () => {
@@ -38,13 +38,17 @@ const Header = () => {
     return () => clearTimeout(handleTyping);
   }, [charIndex, isDeleting, textIndex, texts]);
 
-  const handleClick = (label: string) => {
-    console.log(`${label} button clicked`);
+ 
+  const handleClick = (id: string) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   return (
     <div className="container">
-      <div className="Header-container">
+      <div className="header-container">
         <div className="text-overlay">
           <h1 className="typewriter-text">{currentText}</h1>
         </div>
@@ -57,7 +61,7 @@ const Header = () => {
               <li key={index} className="navbar-item">
                 <button
                   className="navbar-button"
-                  onClick={() => handleClick(link.label)}
+                  onClick={() => handleClick(link.id)}
                 >
                   {link.label}
                 </button>

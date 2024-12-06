@@ -1,6 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom'
 import AppLayout from '../layouts/AppLayout'
-import HomePage from '../pages/Home'
+import { Home } from '../pages/index'
 
 export const appRouter = createBrowserRouter([
     {
@@ -8,8 +8,8 @@ export const appRouter = createBrowserRouter([
         element: <AppLayout />,
         children: [
             {
-                path: '/home-page',
-                element: <HomePage/>,
+                path: '/',
+                element: <Home />,
             },
         ],
     },

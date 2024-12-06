@@ -1,5 +1,5 @@
 export default {
-    heading : 'About me',
-    content : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo iure provident sequi odit doloribus temporibus nostrum ratione debitis alias accusantium, eligendi accusamus in. Iste dignissimos pariatur ipsum velit iusto quae.'
-
+    heading: 'About me',
+    content:
+        'Software Development Engineer with experience building scalable web applications using React.js, TypeScript, and Node.js. Skilled in creating responsive, user-friendly interfaces and optimizing performance. Experienced in both frontend and backend development, dedicated to delivering high-quality, dynamic solutions.',
 }
