@@ -47,7 +47,7 @@
   "rules": {
       "react/react-in-jsx-scope": "off",
       "spaced-comment": "error",
-      "quotes": ["error", "single"],
+      "quotes": ["error", "double"],
       "no-duplicate-imports": "error",
       "no-use-before-define": "off",
       "react/prop-types": 0,

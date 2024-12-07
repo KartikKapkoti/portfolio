@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react'
-import './styles.scss'
-import { quotes } from './data'
-import messages from './messages'
+import React, { useState, useEffect } from "react"
+import "./styles.scss"
+import { quotes } from "./data"
+import messages from "./messages"
 
 const Carousel = () => {
     const [currentIndex, setCurrentIndex] = useState(0)
@@ -18,8 +18,8 @@ const Carousel = () => {
 
     // Auto-play functionality
     useEffect(() => {
-        const interval = setInterval(goToNext, 5000) 
-        return () => clearInterval(interval) 
+        const interval = setInterval(goToNext, 5000)
+        return () => clearInterval(interval)
     }, [])
 
     return (
@@ -39,7 +39,7 @@ const Carousel = () => {
                     <button
                         key={index}
                         className={`carousel-indicator ${
-                            index === currentIndex ? 'active' : ''
+                            index === currentIndex ? "active" : ""
                         }`}
                         onClick={() => setCurrentIndex(index)}
                     />

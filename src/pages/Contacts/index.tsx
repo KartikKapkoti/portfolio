@@ -1,10 +1,10 @@
-import React from 'react'
-import './styles.scss'
-import { EmailIcon, PhoneIcon, SocialIcon } from '../../assets/index'
+import React from "react"
+import "./styles.scss"
+import { EmailIcon, PhoneIcon, SocialIcon } from "../../assets/index"
 
 const Contacts = () => {
     return (
-        <div id='contacts'className="contacts-section">
+        <div id="contacts" className="contacts-section">
             <h1 className="contacts-heading">Contacts</h1>
             <div className="contacts-info">
                 <div className="contact-item">
@@ -45,7 +45,7 @@ const Contacts = () => {
                             >
                                 Twitter
                             </a>
-                            {' | '}
+                            {" | "}
                             <a
                                 href="https://linkedin.com/in/kartik"
                                 target="_blank"
